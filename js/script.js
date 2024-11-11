@@ -7,10 +7,13 @@ function tableOfrndNumbers() {
     let randomNumber = Math.floor(Math.random() * (50 - 1 + 1)) + 1;
     if (!numberToguess.includes(randomNumber)) {
       numberToguess.push(randomNumber);
+      const listeEl = document.createElement("li");
+      listeEl.innerHTML = randomNumber;
+      array.appendChild(listeEl);
     }
   }
   console.log(numberToguess);
-  array.innerHTML = numberToguess.join(" || ");
+  // array.innerHTML = numberToguess.join(" || ");
 }
 tableOfrndNumbers();
 
