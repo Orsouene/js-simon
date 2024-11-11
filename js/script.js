@@ -1,5 +1,5 @@
 // function della tabella di  Random numbers
-let array = document.getElementById("mytable");
+let array = document.getElementById("numbers-list");
 let numberToguess = [];
 function tableOfrndNumbers() {
   while (numberToguess.length < 5) {
